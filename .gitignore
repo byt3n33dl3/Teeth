@@ -1,52 +1,81 @@
-# Prerequisites
-*.d
+*.diff
+*.log
+*.orig
+*.patch
+*.pot
+*.rec
+*.rej
 
-# Object files
+*.tmp
+*~
+*.old
+*.bak
+*.in
+*.dlst
+*.lst
+*.sam
+
 *.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
 *.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+*.dSYM
+.DS_Store
+*.pyc
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+Makefile
+local.conf
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+run/__pycache__
+run/SIPdump
+run/base64conv
+
+src/.gdbinit
+src/Unicode
+src/aes/aes.a
+src/arch.h
+src/all_tests.lst
+src/autoconfig-stamp-h
+src/autoconfig-stamp-h-in
+src/autoconfig.h
+src/autom4te.cache/
+src/config*.cache
+src/config.status
+src/configure.scan
+src/dyna-comp.dic
+src/dyna-comp.pot
+src/dyna-comp.rec
+src/escrypt/tests
+src/fmt_externs.h
+src/fmt_registers.h
+src/memdbg_defines.h
+src/secp256k1/secp256k1.a
+src/stamp-h1
+src/version.h
+src/version.h.new
+src/restore_tester_fmt_plug.c
+
+test
+test/
+
+dict
+dict/
+/.vs
+src/.vscode/
+/src/.vs
+/src/CppProperties.json
+
+# Python-related files
+*.pip
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+**/venv/
+
+output/
+__pycache__/
+*.py[cod]
+.sqlmap_history
+traffic.txt
+*~
+req*.txt
+.idea/
