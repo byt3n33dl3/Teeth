@@ -1,0 +1,23 @@
+#*.c text
+#*.h text
+
+# Declare files that will always have CRLF line endings on checkout.
+run.txt text eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+run/*.chr binary
+src/smilodon binary
+
+# Substitutions for git archive
+src/Makefile.in export-subst
+src/Makefile.legacy export-subst
+
+# Files/directories to be ignored for git archive
+.circleci export-ignore
+.git export-ignore
+.gitattributes export-ignore
+.github export-ignore
+.gitignore export-ignore
+.mailmap export-ignore
+.pre-commit.sh export-ignore
+circle.yml export-ignore
