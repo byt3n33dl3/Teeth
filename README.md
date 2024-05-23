@@ -14,6 +14,21 @@ Supports ```distributed``` password cracking. It can handle various domains, inc
 
 [![smilodon_banner_2](https://github.com/pxcs/smilodon/assets/151133481/f35820fd-18f4-4068-ac98-71c2c3021ec9)](https://github.com/pxcs/smilodon)
 
+```
+ Protocol-attack/
+│
+├── Hash ----> Brute-> Dictionary-> Calculate-> Generate.
+│
+├── Active Domain ----> Brute-> Dictionary.
+│
+├── Active Directory ----> Calculate-> Brute-> Dictionary.
+│
+├── More ----> [...]
+│
+├── README.md
+└── requirements.txt 
+```
+
 ### Documentation and Credit
 
 The rest of documentation and Credit was on separate files.<br>
