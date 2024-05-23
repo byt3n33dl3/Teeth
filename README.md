@@ -1,4 +1,4 @@
-[![smilodon_banner](https://github.com/pxcs/smilodon/assets/151133481/0f54e7ec-dca8-47f4-ab67-75e0edf2a50d)](https://github.com/pxcs/smilodon)
+[![smilodon_banner](https://github.com/pxcs/smilodon/assets/151133481/d0c48a7f-02f5-4d61-9b0e-cb7d1b8d97c2)](https://github.com/pxcs/smilodon)
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0378.gif" width="1000" height="2" />
 
 ## Smilodon cybertooth
