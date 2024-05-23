@@ -211,21 +211,6 @@
     <ClCompile Include="archive.cpp" />
     <ClCompile Include="arcread.cpp" />
     <ClCompile Include="blake2s.cpp" />
-    <ClCompile Include="cmddata.cpp" />
-    <ClCompile Include="consio.cpp" />
-    <ClCompile Include="crc.cpp" />
-    <ClCompile Include="crypt.cpp" />
-    <ClCompile Include="encname.cpp" />
-    <ClCompile Include="errhnd.cpp" />
-    <ClCompile Include="extinfo.cpp" />
-    <ClCompile Include="extract.cpp" />
-    <ClCompile Include="filcreat.cpp" />
-    <ClCompile Include="file.cpp" />
-    <ClCompile Include="filefn.cpp" />
-    <ClCompile Include="filestr.cpp" />
-    <ClCompile Include="find.cpp" />
-    <ClCompile Include="getbits.cpp" />
-    <ClCompile Include="global.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -253,25 +238,6 @@
     <ClCompile Include="rarvm.cpp" />
     <ClCompile Include="rawread.cpp" />
     <ClCompile Include="rdwrfn.cpp" />
-    <ClCompile Include="recvol.cpp" />
-    <ClCompile Include="resource.cpp" />
-    <ClCompile Include="rijndael.cpp" />
-    <ClCompile Include="rs.cpp" />
-    <ClCompile Include="rs16.cpp" />
-    <ClCompile Include="scantree.cpp" />
-    <ClCompile Include="secpassword.cpp" />
-    <ClCompile Include="sha1.cpp" />
-    <ClCompile Include="sha256.cpp" />
-    <ClCompile Include="smallfn.cpp" />
-    <ClCompile Include="strfn.cpp" />
-    <ClCompile Include="strlist.cpp" />
-    <ClCompile Include="system.cpp" />
-    <ClCompile Include="threadpool.cpp" />
-    <ClCompile Include="timefn.cpp" />
-    <ClCompile Include="ui.cpp" />
-    <ClCompile Include="unicode.cpp" />
-    <ClCompile Include="unpack.cpp" />
-    <ClCompile Include="volume.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
