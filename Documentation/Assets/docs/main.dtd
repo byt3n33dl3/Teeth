@@ -1,11 +1,11 @@
 <?xml encoding="UTF-8"?>
 
-<!ELEMENT niktoscans (niktoscan)+>
-<!ATTLIST niktoscans
+<!ELEMENT smilodon (smilodonscan)+>
+<!ATTLIST smilodon
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT niktoscan (scandetails)>
-<!ATTLIST niktoscan
+<!ELEMENT smilodon (scandetails)>
+<!ATTLIST smilodon
   xmlns CDATA #FIXED ''
   hoststest CDATA #REQUIRED
   nxmlversion CDATA #REQUIRED
