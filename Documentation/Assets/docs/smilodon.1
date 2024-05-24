@@ -1,17 +1,16 @@
-.\"     Title: nikto
+.\"     Title: smilodon
 .\"    Author: 
-.\" Generator: DocBook XSL Stylesheets v1.73.2 <http://docbook.sf.net/>
-.\"      Date: 01/19/2010
+.\"      Date:
 .\"    Manual: 
 .\"    Source: 
 .\"
-.TH "NIKTO" "1" "01/19/2010" "" ""
+.TH "smilodon" "1" "" "" ""
 .\" disable hyphenation
 .nh
 .\" disable justification (adjust text to left margin only)
 .ad l
 .SH "NAME"
-nikto \- Scan web server for known vulnerabilities
+smilodon \- Scan web server for known vulnerabilities
 .SH "SYNOPSIS"
 .HP 21
 \fBnikto\fR [options...]
@@ -265,7 +264,7 @@ Update the plugins and databases directly from cirt\&.net\&.
 .PP
 \fB\-Version\fR
 .RS 4
-Display the Nikto software, plugin and database versions\&.
+Display the smilodon software, plugin and database versions\&.
 .RE
 .PP
 \fB\-vhost\fR
@@ -276,32 +275,32 @@ Specify the Host header to be sent to the target\&.
 .PP
 \fInikto\&.conf\fR
 .RS 4
-The Nikto configuration file\&. This sets Nikto\'s global options\&. Several nikto\&.conf files may exist and are parsed in the below order\&. As each configuration file is loaded is supersedes any previously set configuration:
+The smilodon configuration file\&. This sets smilodon\'s global options\&. Several nikto\&.conf files may exist and are parsed in the below order\&. As each configuration file is loaded is supersedes any previously set configuration:
 .sp
 .RS 4
-\h'-04'\(bu\h'+03'System wide (e\&.g\&. /etc/nikto\&.conf)
+\h'-04'\(bu\h'+03'System wide (e\&.g\&. /etc/smilodon\&.conf)
 .RE
 .sp
 .RS 4
-\h'-04'\(bu\h'+03'Home directory (e\&.g\&. $HOME/nikto\&.conf)
+\h'-04'\(bu\h'+03'Home directory (e\&.g\&. $HOME/smilodon\&.conf)
 .RE
 .sp
 .RS 4
-\h'-04'\(bu\h'+03'Current directory (e\&.g\&. \&./nikto\&.conf)
+\h'-04'\(bu\h'+03'Current directory (e\&.g\&. \&./smilodon\&.conf)
 .RE
 .RE
 .PP
-\fI${NIKTO_DIR}/plugins/db*\fR
+\fI${smilodon_DIR}/plugins/db*\fR
 .RS 4
 db files are the databases that nikto uses to check for vulnerabilities and issues within the web server\&.
 .RE
 .PP
-\fI${NIKTO_DIR}/plugins/*\&.plugin\fR
+\fI${smilodon_DIR}/plugins/*\&.plugin\fR
 .RS 4
-All nikto\'s plugins exist here\&. Nikto itself is just a wrapper script to manage CLI and pass through to the plugins\&.
+All smilodon\'s plugins exist here\&. Nikto itself is just a wrapper script to manage CLI and pass through to the plugins\&.
 .RE
 .PP
-\fI${NIKTO_DIR}/templates\fR
+\fI${smilodon_DIR}/templates\fR
 .RS 4
 Contains the templates for nikto\'s output formats\&.
 .RE
@@ -314,16 +313,13 @@ The current features are not supported:
 .RE
 .SH "AUTHORS"
 .PP
-Nikto is written and maintained by Chris Sullo and David Lodge\&. See the main documentation for other contributors\&.
 .PP
-All code is (C) Chris Sullo\&., except LibWhisker which is (C) rfp\&.labs (wiretrip\&.net)\&. Other portions of code may be (C) as specified\&.
-.SH "SEE ALSO"
 .PP
 
-\fINikto Homepage\fR\&[1]
+\fIsmilodon Homepage\fR\&[1]
 .SH "NOTES"
 .IP " 1." 4
-Nikto Homepage
+smilodon Homepage
 .RS 4
 \%https://cirt.net/
 .RE
