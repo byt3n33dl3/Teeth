@@ -1,4 +1,4 @@
-CREATE TABLE 'nikto_table' (
+CREATE TABLE 'smilodon_table' (
   'testid' varchar(6) NOT NULL,
   'ip' varchar(15) DEFAULT NULL,
   'hostname' text DEFAULT NULL,
