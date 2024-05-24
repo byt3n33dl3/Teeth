@@ -1,16 +1,12 @@
-@SET_MAKE@
-CC = @CC@
+
+CC = gcc
 CXX = @CXX@
-AS = @CC@
-LD = @CC@
-CPP = @CC@
-CFLAGS = @CFLAGS@ @CFLAGS_EXTRA@ @OPENSSL_CFLAGS@ -Wno-unused-function
-ASFLAGS = @ASFLAGS@ -c @EXTRA_AS_FLAGS@
-LDFLAGS = @LDFLAGS@ @OPENSSL_LIBS@
-YASM = @YASM@
-AR = @AR@
-FIND = @FIND@
-RM = /bin/rm -f
+AS = gcc
+LD = gcc
+CPP = gcc
+YASM =
+AR = ar
+FIND = find
 
 IN = secp256k1.o
 
