@@ -1,0 +1,64 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT niktoscans (niktoscan)+>
+<!ATTLIST niktoscans
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT niktoscan (scandetails)>
+<!ATTLIST niktoscan
+  xmlns CDATA #FIXED ''
+  hoststest CDATA #REQUIRED
+  nxmlversion CDATA #REQUIRED
+  options CDATA #REQUIRED
+  scanelapsed NMTOKEN #REQUIRED
+  scanend CDATA #REQUIRED
+  scanstart CDATA #REQUIRED
+  version NMTOKEN #REQUIRED>
+
+<!ELEMENT scandetails (item+,statistics)>
+<!ATTLIST scandetails
+  xmlns CDATA #FIXED ''
+  checks CDATA #REQUIRED
+  errors CDATA #REQUIRED
+  hostheader NMTOKEN #REQUIRED
+  siteip CDATA #REQUIRED
+  sitename CDATA #REQUIRED
+  starttime CDATA #REQUIRED
+  targetbanner CDATA #REQUIRED
+  targethostname NMTOKEN #REQUIRED
+  targetip NMTOKEN #REQUIRED
+  targetport CDATA #REQUIRED>
+
+<!ELEMENT item (description,uri,namelink,iplink,references)>
+<!ATTLIST item
+  xmlns CDATA #FIXED ''
+  id CDATA #REQUIRED
+  method NMTOKEN #REQUIRED>
+
+<!ELEMENT statistics EMPTY>
+<!ATTLIST statistics
+  xmlns CDATA #FIXED ''
+  elapsed CDATA #REQUIRED
+  endtime CDATA #REQUIRED
+  itemsfound CDATA #REQUIRED
+  itemstested CDATA #REQUIRED>
+
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST description
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT uri (#PCDATA)>
+<!ATTLIST uri
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT namelink (#PCDATA)>
+<!ATTLIST namelink
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT iplink (#PCDATA)>
+<!ATTLIST iplink
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT references (#PCDATA)>
+<!ATTLIST references
+  xmlns CDATA #FIXED ''>
