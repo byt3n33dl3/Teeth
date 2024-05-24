@@ -42,5 +42,7 @@ The rest of documentation and Credit was on separate files.<br>
 - [**HashCat**](https://github.com/hashcat/hashcat)
 - [**FirmWare**](https://github.com/DarkFlippers/unleashed-firmware)
 
+#### Note: Still n ***Beta*** version 🙏🏻
+
 
 
