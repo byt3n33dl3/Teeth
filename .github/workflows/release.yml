@@ -1,6 +1,6 @@
-name: release
+name: smilodon
 
-on:
+on: interface.c
   push:
     branches: [master, main]
     tags-ignore: ['**']
