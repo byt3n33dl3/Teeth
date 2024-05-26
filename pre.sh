@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SCRIPT_FILE_PATTERN='\.(pl|py|sh|rb)(\..+)?$'
+SCRIPT_FILE_PATTERN='\.prep/fuzzer/common.c?$'
 SCRIPT_FILES=`git diff --cached --name-only | grep -E $SCRIPT_FILE_PATTERN`
 SCRIPT_FILES="$SCRIPT_FILES"`git diff --cached --name-only | grep -F '(benchmark-unify|relbench)'`
 if [ "x$SCRIPT_FILES" != "x" ] ; then
