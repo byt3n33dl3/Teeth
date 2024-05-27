@@ -25,6 +25,8 @@ Supports ```distributed``` password cracking. It can handle various domains, inc
 │
 ├── More ----> [...]
 │
+├── run ----> bash scripts
+│
 ├── README.md
 └── requirements.txt 
 ```
@@ -37,12 +39,24 @@ The rest of documentation and Credit was on separate files.<br>
 - **Rainbow in the table attack**<br>
 <hr>
 
+#### Smilodon | Passwords Descriptions Attack | Online and Offline
+
+<a href="https://github.com/pxcs/smilodon/"><img src="https://github.com/pxcs/smilodon/assets/151133481/4ba60929-bf7a-40be-8a8e-cc650a456cad" align="right" width="70" alt="smilodon-logo"></a>
+
+> [<img src="https://github.com/pxcs/smilodon/assets/151133481/4ba60929-bf7a-40be-8a8e-cc650a456cad" width="20">]() smilodon, cyber-tooth | swiss army knife: <br>
+Hash values can be thought of as fingerprints for files. The contents of a file are processed through a cryptographic algorithm, and a unique numerical value, the hash value is produced that identifies the contents of the file. The way Hash identifier works was by checking the hash given against criteria for all the hash types it supports and will give a list of possible hash types.<br><br>
+
+> [<img src="https://github.com/pxcs/smilodon/assets/151133481/4ba60929-bf7a-40be-8a8e-cc650a456cad" width="20">]() About online domain cracker<br>
+Currently this tool supports the following protocols: HTTP-FORM-GET, HTTP-FORM-POST, HTTP-GET, HTTP-HEAD, HTTP-POST, HTTP-PROXY, HTTPS-FORM-GET, HTTPS-FORM-POST, HTTPS-GET, HTTPS-HEAD, HTTPS-POST, HTTP-Proxy, SSH (v1 and v2), SSHKEY.
+<hr>
+
+<!--lint enable double-link-->
+
 - [**JohnTheRipper**](https://github.com/openwall/john)
 - [**Hydra**](https://github.com/vanhauser-thc/thc-hydra)
 - [**HashCat**](https://github.com/hashcat/hashcat)
 - [**FirmWare**](https://github.com/DarkFlippers/unleashed-firmware)
 
-#### Note: Still in ***Beta*** version 🙏🏻, kindly need a contributions.
+#### Note: Still in ***Beta*** version 🙏🏻, kindly need a contributions.<br><br><br>
 
-
-
+[![new](https://github.com/pxcs/smilodon/assets/151133481/9d76657a-9057-4b70-b0d8-f6e80c0c609e)](https://github.com/pxcs/)
