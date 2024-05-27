@@ -21,7 +21,7 @@ Supports ```distributed``` password cracking. It can handle various domains, inc
 │
 ├── Active Domain ----> Brute-> Dictionary.
 │
-├── Active Directory ----> Calculate-> Brute-> Dictionary.
+├── LDAP Space ----> Calculate-> Brute-> Dictionary.
 │
 ├── More ----> [...]
 │
