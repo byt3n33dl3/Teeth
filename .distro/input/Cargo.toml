@@ -1,0 +1,5 @@
+[package]
+edition = "2024"
+name = "smilodon"
+version = "0.3.3"
+license = "MIT"
