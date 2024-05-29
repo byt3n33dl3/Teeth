@@ -1,0 +1,52 @@
+# Copyright (c) 2016 Jake Willoughby
+#
+# This file is part of DOH.
+#
+# DOH is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+#
+# DOH is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with DOH.  See gpl3.txt. If not, see <http://www.gnu.org/licenses/>.
+defaults: &defaults
+  length: 20
+  chars:  " !\"#$%&'()*+,-./0123456789:;ABCDEFGHIJKLMNOPQRabcdefghijklmnopqr"
+
+foo:
+  <<: *defaults
+  require:
+    1:
+      - "ABCDEFGHIJKLMNOPQR"
+    2:
+      - "ABC"
+      - "!"
+disa.mil:
+  <<: *defaults
+
+comcast.net:
+  <<: *defaults
+  length: 16
+
+ally.com:
+  <<: *defaults
+  chars:  "Z!\"#$%&'()*+,-./0123456789:;ABCDEFGHIJKLMNOPQRabcdefghijklmnopqr"
+
+aliexpress.com:
+  <<: *defaults
+  # 0 and 1 are duplicated which actually reduces entropy a bit
+  chars: "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01"
+
+walmart.com:
+  <<: *defaults
+  length: 12
+
+geico.com:
+  <<: *defaults
+  length: 16
+  chars:  "s!t#$%&u()*vw-yx0123456789zZABCDEFGHIJKLMNOPQRabcdefghijklmnopqr"
