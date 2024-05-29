@@ -2,7 +2,9 @@
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0378.gif" width="1000" height="2" />
 
 ## Smilodon cybertooth
-Smilodon, the world's premier password recovery utility, engineered for unparalleled speed and sophistication. Boasting support for five unique modes of attack and hashing algorithms, Smilodon leverages the power of the core, and other hardware accelerators on every O.S in every computer. Its advanced capabilities also facilitate distributed password cracking, making it an indispensable tool for both online and offline scenarios. With Smilodon, recover passwords across diverse ```domains,``` including ```hash-based``` and other complex systems, with unprecedented efficiency and reliability.
+Smilodon, the world's premier password recovery utility, engineered for unparalleled speed and sophistication. Boasting support for five unique modes of attack and hashing ***algorithms***, Smilodon leverages the power of the core, and other hardware accelerators on every O.S in every computer. Its advanced capabilities also facilitate distributed password cracking, making it an indispensable tool for both online and offline scenarios. With Smilodon, recover passwords across diverse ```domains,``` including ```hash-based``` and other complex systems, with unprecedented efficiency and reliability.
+
+In hashing, every piece of input ***data*** is used to produce a single output. Hash function. The central part of the hashing process is the hash function. This function takes the input data and applies a ```series of mathematical``` operations to it, resulting in a fixed-length string of characters.
 
 ### Types of attacks 
 - ***Brute-force*** attacks can be very time-consuming because they take a systematic approach to trying all possible permutations of characters in a sequence. The longer the password, the longer it takes. Brute-force attacks are most successful when users have common or weak passwords, which can be “guessed” by tools in a matter of seconds. Of course, Smilodon wouldn't just guess, but more specifically ```'calculate'``` the hash or the target domain.
@@ -47,15 +49,15 @@ The rest of documentation and Credit was on separate files.<br>
 Hash values can be thought of as fingerprints for files. The contents of a file are processed through a cryptographic algorithm, and a unique numerical value, the hash value is produced that identifies the contents of the file. The way Hash identifier works was by checking the hash given against criteria for all the hash types it supports and will give a list of possible hash types.<br><br>
 
 > [<img src="https://github.com/pxcs/smilodon/assets/151133481/4ba60929-bf7a-40be-8a8e-cc650a456cad" width="20">]() About online domain cracker<br>
-Currently this tool supports the following protocols: HTTP-FORM-GET, HTTP-FORM-POST, HTTP-GET, HTTP-HEAD, HTTP-POST, HTTP-PROXY, HTTPS-FORM-GET, HTTPS-FORM-POST, HTTPS-GET, HTTPS-HEAD, HTTPS-POST, HTTP-Proxy, SSH (v1 and v2), SSHKEY.
+Currently this tool supports the following protocols: http-form-get, http-form-post, http-get, http-head, http-post, http-proxy, SSH (v1 and v2), SSHKEY.
 <hr>
 
 <!--lint enable double-link-->
 
-- [**JohnTheRipper**](https://github.com/openwall/john)
-- [**Hydra**](https://github.com/vanhauser-thc/thc-hydra)
-- [**HashCat**](https://github.com/hashcat/hashcat)
-- [**FirmWare**](https://github.com/DarkFlippers/unleashed-firmware)
+> - [**JohnTheRipper**](https://github.com/openwall/john)
+> - [**Hydra**](https://github.com/vanhauser-thc/thc-hydra)
+> - [**HashCat**](https://github.com/hashcat/hashcat)
+> - [**FirmWare**](https://github.com/DarkFlippers/unleashed-firmware)
 
 #### Note: Still in ***Beta*** version 🙏🏻, kindly need a contributions.<br><br><br>
 
