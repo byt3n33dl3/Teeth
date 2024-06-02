@@ -1,4 +1,5 @@
 #include "sasl.h"
+#include <main.h>
 
 extern int32_t selected_proxy;
 
