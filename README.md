@@ -1,8 +1,7 @@
 [![Circle CI](https://circleci.com/gh/openwall/john/tree/bleeding-jumbo.svg?style=shield)](https://circleci.com/gh/openwall/john/tree/bleeding-jumbo)
 [![Downloads](https://img.shields.io/badge/Download-Windows%20Build-blue.svg)](https://github.com/openwall/john-packages/releases)
 [![License](https://img.shields.io/badge/License-GPL%20%2B-blue.svg)](https://github.com/openwall/john/blob/bleeding-jumbo/doc/LICENSE)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/openwall/john?color=yellow)
-![GitHub commits since tagged version](https://img.shields.io/github/commits-since/openwall/john/1.9.0-Jumbo-1?color=brown)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/openwall/john?color=brown)
 
 ## Teeth ( Smilodon Cybertooth )
 
@@ -162,4 +161,84 @@ the recommended order of reading:
 
 (*) most users can safely skip these.
 
-Thanks to all password recovery tool repo
+## Testing
+
+```
+kali@kali:~$
+kali@kali:~$ teeth -h
+
+--single[=SECTION]        "single crack" mode
+--wordlist[=FILE] --stdin wordlist mode, read words from FILE or stdin
+                   --pipe like --stdin, but read from stdout of a command
+--loopback[=FILE]         like --wordlist, but extract words from a .pot file
+--dupe-suppression        suppress all dupes in wordlist (and force preload)
+--prince[=FILE]           PRINCE mode, read words from FILE
+--encoding=NAME           input encoding (eg. UTF-8, ISO-8859-1). See also
+                          doc/ENCODINGS.
+--rules[=SECTION]         enable word mangling rules for wordlist modes
+--incremental[=MODE]      "incremental" mode [using section MODE]
+--external=MODE           external mode or word filter
+--mask=MASK               mask mode using MASK (see doc/MASK)
+--markov[=OPTIONS]        "Markov" mode (see doc/MARKOV)
+--subsets[=OPTIONS]       "subsets" mode (see doc/SUBSETS)
+--stdout[=LENGTH]         just output candidate passwords [cut at LENGTH]
+--restore[=NAME]          restore an interrupted session [called NAME]
+--session=NAME            give a new session the NAME
+--status[=NAME]           print status of a session [called NAME]
+--make-charset=FILE       make a charset, FILE will be overwritten
+--show[=left]             show cracked passwords [if =left, then uncracked]
+--test[=TIME]             run tests and benchmarks for TIME seconds each
+--users=[-]LOGIN|UID[,..] [do not] load this (these) user(s) only
+--groups=[-]GID[,..]      load users [not] of this (these) group(s) only
+--shells=[-]SHELL[,..]    load users with[out] this (these) shell(s) only
+--salts=[-]COUNT[:MAX]    load salts with[out] COUNT [to MAX] hashes
+--save-memory=LEVEL       enable memory saving, at LEVEL 1..3
+--node=MIN[-MAX]/COUNT    this node's number range out of COUNT
+--fork=N                  fork N processes
+--pot=NAME                pot file to use
+--format=NAME             force hash type NAME: bcrypt,md5crypt
+                          See doc/FORMATS and doc/OPTIONS
+--list=WHAT               list capabilities, see doc/OPTIONS
+--device=N[,..]           set CUDA, OpenCL, or ZTEX device(s) (see --list=opencl-devices, --list=cuda-devices, --list=ztex-devices)
+--save-mem=LEVEL          enable memory saving, at LEVEL 1..3
+--regen-lost-salts=N      per salt guess count
+```
+
+- Example ( **Dictionary Attack** )
+
+```
+kali@kali:~$
+kali@kali:~$ teeth --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha256 crack.txt
+
+Using default input encoding: UTF-8
+Loaded 1 password hash (Raw-SHA256 [SHA256 128/128 AVX 4x])
+Cost 1 (iteration count) is 1 for all loaded hashes
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+0g 0:00:00:00 DONE (2024-06-25) 0g/s 0p/s 0c/s 0cr/s 0p/s 0p/s password
+Session completed
+
+⠀⣰⠋⡁⢠⣠⢤⣄⣤⡤⡤⠒⡉⢢⠀⠀
+⠀⢱⠼⠃⡩⡼⡞⣛⡁⡧⢂⡌⠿⡎⠀⠀
+⠀⠠⢫⢪⣧⢎⠰⠴⠊⢎⣢⣁⢚⢄⠀⠀
+⠀⠃⡇⠛⡋⠟⡷⠀⠀⣿⠞⠈⢸⠀⣦⠀
+⢸⠀⣷⠘⣘⣡⠇⠀⠀⠘⢲⡒⢸⠅⠾⠁
+⠘⣦⡈⠿⣵⣳⣴⢆⡠⠂⣴⣿⠟⢀⠁⡄
+⠀⠸⣇⠀⡑⡳⡼⠡⠢⢸⠟⠁⣠⡎⣰⠃
+⠀⢠⣫⠛⢯⣉⠓⠤⣤⠖⠓⠛⣡⣾⠇⠀
+⠀⠀⠙⢕⠀⡈⠛⠦⣌⠢⠀⠈⣼⠏⠀⠀
+⠀⠀⠀⠈⠑⠦⣄⡀⠘⢷⠄⢐⠁⠀⠀⠀
+
+   ____ ____    _    ____ _  __    ____ ___  ____ ____  _  __ _____
+  / ___|  _ \  / \  / ___| |/ /   / ___/ _ \|  _ \___ \| |/ /| ____|
+ | |   | | | |/ _ \| |   | ' /   | |  | | | | | | |__) | ' / |  _|
+ | |___| |_| / ___ \ |___| . \   | |__| |_| | |_| / __/| . \ | |___
+  \____|____/_/   \_\____|_|\_\   \____\___/|____/_____|_|\_\|_____|
+
+
+results: 4nj1ngloh123 (?)
+
+1 password hash cracked, 0 left
+```
+
+Thanks to all password recovery tool repo. See more in our ORG
