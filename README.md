@@ -58,18 +58,18 @@ of modes and assuming that "password" is a copy of your password file:
 or, to restrict it to the wordlist mode only, but permitting the use
 of word mangling rules:
 
-	Teeth --wordlist=password.lst --rules passwd
+	Teeth --wordlist=password.lst --rules password
 
 Cracked passwords will be printed to the terminal and saved in the
 file called $TEETH/Teeth.pot (in the documentation and in the
-configuration file for John, "$Teeth" refers to Teeth's "home
+configuration file for Teeth, "$Teeth" refers to Teeth's "home
 directory"; which directory it really is depends on how you installed
 Teeth).  The $TEETH/Teeth.pot file is also used to not load password
 hashes that you already cracked when you run Teeth the next time.
 
 To retrieve the cracked passwords, run:
 
-	Teeth --show passwd
+	Teeth --show password
 
 While cracking, you can press any key for status, or 'q' or Ctrl-C to
 abort the session saving its state to a file ($TEETH/Teeth.rec by
@@ -148,18 +148,17 @@ the recommended order of reading:
 * [INSTALL](doc/INSTALL) - installation instructions
 * [OPTIONS](doc/OPTIONS) - command line options and additional utilities
 * [MODES](doc/MODES) - cracking modes: what they are
-* [CONFIG](doc/CONFIG) (*) - how to customize
-* [RULES](doc/RULES) (*) - wordlist rules syntax
-* [EXTERNAL](doc/EXTERNAL) (*) - defining an external mode
+* [CONFIG](doc/CONFIG) - how to customize
+* [RULES](doc/RULES) - wordlist rules syntax
+* [EXTERNAL](doc/EXTERNAL) - defining an external mode
 * [EXAMPLES](doc/EXAMPLES) - usage examples - strongly recommended
 * [FAQ](doc/FAQ) - guess
-* [CHANGES](doc/CHANGES) (*) - history of changes
-* [CONTACT](doc/CONTACT) (*) - how to contact the author or otherwise obtain support
-* [CREDITS](doc/CREDITS) (*) - credits
+* [CHANGES](doc/CHANGES) - history of changes
+* [CONTACT](doc/CONTACT) - how to contact the author or otherwise obtain support
+* [CREDITS](doc/CREDITS) - credits
 * [LICENSE](doc/LICENSE) - copyrights and licensing terms
 * [COPYING](doc/COPYING) - GNU GPL, as referenced by LICENSE above
 
-(*) most users can safely skip these.
 
 ## Testing
 
@@ -206,7 +205,7 @@ kali@kali:~$ teeth -h
 <hr>
 
 <details>
-<summary><h2> Example </h2></summary>
+<summary><h4> Example </h4></summary>
 
 - Offile example ( **Dictionary Attack** )
 
@@ -241,7 +240,7 @@ Session completed.
    | |   | |____ | |____     | |   | |  | |
    |_|   |______||______|    |_|   |_|  |_| by @github.pxcs
 
-results: 4nj1ngloh123 (?)
+results: h3batl0h321 (?)
 
 1 password hash cracked, 0 left
 ```
@@ -313,4 +312,4 @@ password has been cracked.
 
 ```
 
-Thanks to all password recovery tool repo. See more in our ORG
+Thanks to all password recovery tool repo ( JtR, Hydra, Cewl ). See more in our ORG
