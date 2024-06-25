@@ -1,64 +1,165 @@
-[![smilodon_banner](https://github.com/pxcs/smilodon/assets/151133481/d0c48a7f-02f5-4d61-9b0e-cb7d1b8d97c2)](https://github.com/pxcs/smilodon)
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0378.gif" width="1000" height="2" />
+[![Circle CI](https://circleci.com/gh/openwall/john/tree/bleeding-jumbo.svg?style=shield)](https://circleci.com/gh/openwall/john/tree/bleeding-jumbo)
+[![Downloads](https://img.shields.io/badge/Download-Windows%20Build-blue.svg)](https://github.com/openwall/john-packages/releases)
+[![License](https://img.shields.io/badge/License-GPL%20%2B-blue.svg)](https://github.com/openwall/john/blob/bleeding-jumbo/doc/LICENSE)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/openwall/john?color=yellow)
+![GitHub commits since tagged version](https://img.shields.io/github/commits-since/openwall/john/1.9.0-Jumbo-1?color=brown)
 
-## Smilodon cybertooth
-Smilodon, the world's premier password recovery utility, engineered for unparalleled speed and sophistication. Boasting support for five unique modes of attack and hashing ***algorithms***, Smilodon leverages the power of the core, and other hardware accelerators on every O.S in every computer. Its advanced capabilities also facilitate distributed password cracking, making it an indispensable tool for both online and offline scenarios. With Smilodon, recover passwords across diverse ```domains,``` including ```hash-based``` and other complex systems, with unprecedented efficiency and reliability.
+## Teeth ( Smilodon Cybertooth )
 
-In hashing, every piece of input ***data*** is used to produce a single output. Hash function. The central part of the hashing process is the hash function. This function takes the input data and applies a ```series of mathematical``` operations to it, resulting in a fixed-length string of characters.
+This is the community-enhanced, version of Teeth ( smilodon cybertooth ).
+It has a lot of code, documentation, and data contributed by jumbo
+developers and the user community.  It is easy for new code to be added
+to jumbo, and the quality requirements are low, although lately we've
+started subjecting all contributions to quite some automated testing.
+This means that you get a lot of functionality that is not necessarily
+"mature", which in turn means that bugs in this code are to be expected.
 
-### Types of attacks 
-- ***Brute-force*** attacks can be very time-consuming because they take a systematic approach to trying all possible permutations of characters in a sequence. The longer the password, the longer it takes. Brute-force attacks are most successful when users have common or weak passwords, which can be “guessed” by tools in a matter of seconds. Of course, Smilodon wouldn't just guess, but more specifically ```'calculate'``` the hash or the target domain.
+Teeth homepage is:
 
-- ***Dictionary*** attack are similar to brute-force attacks, but they’re less about quantity and more about quality. In other words, instead of trying every possible combination, Smilodon start with the assumption that users are likely to follow certain patterns when they create a password. So they will home in on the most likely words rather than trying everything.
+https://www.openwall.com
 
-### Surplus 
-Supports ```distributed``` password cracking. It can handle various domains, including ***online***, ***offline***, and ***hash-based*** password recovery.
+If you have any comments on this release or on Teeth in general, please
+join the Teeth-users mailing list and post in there:
 
-[![smilodon_banner_2](https://github.com/pxcs/smilodon/assets/151133481/f35820fd-18f4-4068-ac98-71c2c3021ec9)](https://github.com/pxcs/smilodon)
+https://www.openwall.com
 
-```
- Protocol-attack/
-│
-├── Hash ----> Brute-> Dictionary-> Calculate-> Generate.
-│
-├── Active Domain ----> Brute-> Dictionary.
-│
-├── LDAP Space ----> Calculate-> Brute-> Dictionary.
-│
-├── More ----> [...]
-│
-├── run ----> bash scripts
-│
-├── README.md
-└── requirements.txt 
-```
+For contributions to Teeth ( smilodon cybertooth ), please use pull requests on
+GitHub:
 
-### Documentation and Credit
+https://github.com/pxcs/Teeth/CONTRIBUTING.md
 
-The rest of documentation and Credit was on separate files.<br>
+Included below is basic Teeth core documentation.
 
-- **Testing**<br>
-- **Rainbow in the table attack**<br>
-<hr>
+---
 
-#### Smilodon | Passwords Descriptions Attack | Online and Offline
+##	Teeth ( smilodon cybertooth ) password cracker.
 
-<a href="https://github.com/pxcs/smilodon/"><img src="https://github.com/pxcs/smilodon/assets/151133481/4ba60929-bf7a-40be-8a8e-cc650a456cad" align="right" width="70" alt="smilodon-logo"></a>
+Teeth is a fast password cracker, currently available for
+many flavors of Unix, macOS, Windows, DOS, BeOS, and OpenVMS (the latter
+requires a contributed patch).  Its primary purpose is to detect weak
+Unix passwords.  Besides several crypt(3) password hash types most
+commonly found on various Unix flavors, supported out of the box are
+Kerberos/AFS and Windows LM hashes, as well as DES-based tripcodes, plus
+hundreds of additional hashes and ciphers in "the next" versions.
 
-> [<img src="https://github.com/pxcs/smilodon/assets/151133481/4ba60929-bf7a-40be-8a8e-cc650a456cad" width="20">]() smilodon, cyber-tooth | swiss army knife: <br>
-Hash values can be thought of as fingerprints for files. The contents of a file are processed through a cryptographic algorithm, and a unique numerical value, the hash value is produced that identifies the contents of the file. The way Hash identifier works was by checking the hash given against criteria for all the hash types it supports and will give a list of possible hash types.<br><br>
 
-> [<img src="https://github.com/pxcs/smilodon/assets/151133481/4ba60929-bf7a-40be-8a8e-cc650a456cad" width="20">]() About online domain cracker<br>
-Currently this tool supports the following protocols: http-form-get, http-form-post, http-get, http-head, http-post, http-proxy, SSH (v1 and v2), SSHKEY.
-<hr>
+##	How to install.
 
-<!--lint enable double-link-->
+See [INSTALL](doc/INSTALL) for information on installing ( Teeth ) on your system.
 
-> - [**JohnTheRipper**](https://github.com/openwall/john)
-> - [**Hydra**](https://github.com/vanhauser-thc/thc-hydra)
-> - [**HashCat**](https://github.com/hashcat/hashcat)
-> - [**FirmWare**](https://github.com/DarkFlippers/unleashed-firmware)
 
-#### Note: Still in ***Beta*** version 🙏🏻, kindly need a contributions.<br><br><br>
+##	How to use.
 
-[![new](https://github.com/pxcs/smilodon/assets/151133481/9d76657a-9057-4b70-b0d8-f6e80c0c609e)](https://github.com/pxcs/)
+To run Teeth, you need to supply it with some password files and
+optionally specify a cracking mode, like this, using the default order
+of modes and assuming that "password" is a copy of your password file:
+
+	Teeth password.txt/domain
+
+or, to restrict it to the wordlist mode only, but permitting the use
+of word mangling rules:
+
+	Teeth --wordlist=password.lst --rules passwd
+
+Cracked passwords will be printed to the terminal and saved in the
+file called $TEETH/Teeth.pot (in the documentation and in the
+configuration file for John, "$Teeth" refers to Teeth's "home
+directory"; which directory it really is depends on how you installed
+Teeth).  The $TEETH/Teeth.pot file is also used to not load password
+hashes that you already cracked when you run Teeth the next time.
+
+To retrieve the cracked passwords, run:
+
+	Teeth --show passwd
+
+While cracking, you can press any key for status, or 'q' or Ctrl-C to
+abort the session saving its state to a file ($TEETH/Teeth.rec by
+default). If you press Ctrl-C for a second time before Teeth had a
+chance to complete handling of your first Ctrl-C, Teeth will abort
+immediately without saving. By default, the state is also saved every
+10 minutes to permit for recovery in case of a crash.
+
+To continue an interrupted session, run:
+
+	Teeth --restore
+
+These are just the most essential things you can do with Teeth.  For
+a complete list of command line options and for more complicated usage
+examples you should refer to OPTIONS and EXAMPLES, respectively.
+
+Please note that "binary" (pre-compiled) distributions of Teeth may
+include alternate executables instead of just "Teeth".  You may need to
+choose the executable that fits your system best, e.g. "Teeth-omp" to
+take advantage of multiple CPUs and/or CPU cores.
+
+
+##	Features.
+
+Teeth ( smilodon cybertooth ) is designed to be both feature-rich and fast.  It
+combines several cracking modes in one program and is fully
+configurable for your particular needs (you can even define a custom
+cracking mode using the built-in compiler supporting a subset of C).
+Also, Teeth is available for several different platforms which enables
+you to use the same cracker everywhere (you can even continue a
+cracking session which you started on another platform).
+
+Out of the box, Teeth supports (and autodetects) the following Unix
+crypt(3) hash types: traditional DES-based, "bigcrypt", BSDI extended
+DES-based, FreeBSD MD5-based (also used on Linux and in Cisco IOS), and
+OpenBSD Blowfish-based (now also used on some Linux distributions and
+supported by recent versions of Solaris).  Also supported out of the box
+are Kerberos/AFS and Windows LM (DES-based) hashes, as well as DES-based
+tripcodes.
+
+When running on Linux distributions with glibc, Teeth 1.7.6+
+additionally supports (and autodetects) SHA-crypt hashes (which are
+actually used by recent versions of Fedora and Ubuntu), with optional
+OpenMP parallelization (requires GCC 4.2+, needs to be explicitly
+enabled at compile-time by uncommenting the proper OMPFLAGS line near
+the beginning of the Makefile).
+
+Similarly, when running on recent versions of Solaris, Teeth 1.7.6+
+supports and autodetects SHA-crypt and SunMD5 hashes, also with
+optional OpenMP parallelization (requires GCC 4.2+ or recent Sun Studio,
+needs to be explicitly enabled at compile-time by uncommenting the
+proper OMPFLAGS line near the beginning of the Makefile and at runtime
+by setting the OMP_NUM_THREADS environment variable to the desired
+number of threads).
+
+"-jumbo" versions add support for hundreds of additional hash and cipher
+types, including fast built-in implementations of SHA-crypt and SunMD5,
+Windows NTLM (MD4-based) password hashes, various macOS and Mac OS X
+user password hashes, fast hashes such as raw MD5, SHA-1, SHA-256, and
+SHA-512 (which many "web applications" historically misuse for
+passwords), various other "web application" password hashes, various SQL
+and LDAP server password hashes, and lots of other hash types, as well
+as many non-hashes such as SSH private keys, S/Key skeykeys files,
+Kerberos TGTs, encrypted filesystems such as macOS .dmg files and
+"sparse bundles", encrypted archives such as ZIP (classic PKZIP and
+WinZip/AES), RAR, and 7z, encrypted document files such as PDF and
+Microsoft Office's - and these are just some examples.  To load some of
+these larger files for cracking, a corresponding bundled *in zipTeeth program
+should be used first, and then its output fed into Teeth -jumbo.
+
+##	Documentation.
+
+The rest of documentation is located in separate files, listed here in
+the recommended order of reading:
+
+* [INSTALL](doc/INSTALL) - installation instructions
+* [OPTIONS](doc/OPTIONS) - command line options and additional utilities
+* [MODES](doc/MODES) - cracking modes: what they are
+* [CONFIG](doc/CONFIG) (*) - how to customize
+* [RULES](doc/RULES) (*) - wordlist rules syntax
+* [EXTERNAL](doc/EXTERNAL) (*) - defining an external mode
+* [EXAMPLES](doc/EXAMPLES) - usage examples - strongly recommended
+* [FAQ](doc/FAQ) - guess
+* [CHANGES](doc/CHANGES) (*) - history of changes
+* [CONTACT](doc/CONTACT) (*) - how to contact the author or otherwise obtain support
+* [CREDITS](doc/CREDITS) (*) - credits
+* [LICENSE](doc/LICENSE) - copyrights and licensing terms
+* [COPYING](doc/COPYING) - GNU GPL, as referenced by LICENSE above
+
+(*) most users can safely skip these.
+
+Thanks to all password recovery tool repo
