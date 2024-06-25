@@ -203,42 +203,114 @@ kali@kali:~$ teeth -h
 --save-mem=LEVEL          enable memory saving, at LEVEL 1..3
 --regen-lost-salts=N      per salt guess count
 ```
+<hr>
 
-- Example ( **Dictionary Attack** )
+<details>
+<summary><h2> Example </h2></summary>
+
+- Offile example ( **Dictionary Attack** )
 
 ```
 kali@kali:~$
 kali@kali:~$ teeth --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha256 crack.txt
 
+Teeth (https://github.com/pxcs/Teeth)
 Using default input encoding: UTF-8
 Loaded 1 password hash (Raw-SHA256 [SHA256 128/128 AVX 4x])
 Cost 1 (iteration count) is 1 for all loaded hashes
 Will run 4 OpenMP threads
 Press 'q' or Ctrl-C to abort, almost any other key for status
-0g 0:00:00:00 DONE (2024-06-25) 0g/s 0p/s 0c/s 0cr/s 0p/s 0p/s password
-Session completed
+0g 0:00:00:00 DONE (x-x-x-x) 0g/s 0p/s 0c/s 0cr/s 0p/s 0p/s password
+Session completed.
 
-⠀⣰⠋⡁⢠⣠⢤⣄⣤⡤⡤⠒⡉⢢⠀⠀
-⠀⢱⠼⠃⡩⡼⡞⣛⡁⡧⢂⡌⠿⡎⠀⠀
-⠀⠠⢫⢪⣧⢎⠰⠴⠊⢎⣢⣁⢚⢄⠀⠀
-⠀⠃⡇⠛⡋⠟⡷⠀⠀⣿⠞⠈⢸⠀⣦⠀
-⢸⠀⣷⠘⣘⣡⠇⠀⠀⠘⢲⡒⢸⠅⠾⠁
-⠘⣦⡈⠿⣵⣳⣴⢆⡠⠂⣴⣿⠟⢀⠁⡄
-⠀⠸⣇⠀⡑⡳⡼⠡⠢⢸⠟⠁⣠⡎⣰⠃
-⠀⢠⣫⠛⢯⣉⠓⠤⣤⠖⠓⠛⣡⣾⠇⠀
-⠀⠀⠙⢕⠀⡈⠛⠦⣌⠢⠀⠈⣼⠏⠀⠀
-⠀⠀⠀⠈⠑⠦⣄⡀⠘⢷⠄⢐⠁⠀⠀⠀
+                       __,,,,_
+   _   _ ___.--'''`--''// ,-o `-.
+   \`)' o |  \  \ o\/ /.// / ,-  o,_
+  /_`  \   |o )  | O|. /o// / -.,_o `-.
+ /<0\    ) \  |  | ||/ //o| \/ O  |`-.o`-._
+/  _.-.  .-\,O__|  _-| /o\ \/|_/  |    `-._)
+`-\  \/ |       /o__/ \__O / |o_/ |
+     `-'       |  -| -|\__ \  |-' |
+            __/ o /__,-o    ),'o |'
+           ((__.-'((____..-' \__,'
 
-   ____ ____    _    ____ _  __    ____ ___  ____ ____  _  __ _____
-  / ___|  _ \  / \  / ___| |/ /   / ___/ _ \|  _ \___ \| |/ /| ____|
- | |   | | | |/ _ \| |   | ' /   | |  | | | | | | |__) | ' / |  _|
- | |___| |_| / ___ \ |___| . \   | |__| |_| | |_| / __/| . \ | |___
-  \____|____/_/   \_\____|_|\_\   \____\___/|____/_____|_|\_\|_____|
-
+ _______  ______  _______  _______  _    _
+|__   __||  ____||  _____||__   __|| |  | |
+   | |   | |__   | |__       | |   | |__| |
+   | |   |  __|  |  __|      | |   |  __  |
+   | |   | |____ | |____     | |   | |  | |
+   |_|   |______||______|    |_|   |_|  |_| by @github.pxcs
 
 results: 4nj1ngloh123 (?)
 
 1 password hash cracked, 0 left
+```
+
+- Online example ( **Dictionary Attack** )
+
+```
+kali@kali:~$
+kali@kali:~$ teeth -L username.txt -P wordlist.txt <ssh> <http> <https> <etc> 127.0.0.1
+
+Teeth (https://github.com/pxcs/Teeth)
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 4 login tries (l:1/p:4)
+[DATA] attacking <ssh> <http> <https> <etc> 127.0.0.1
+[22][ssh] host: 127.0.0.1   login: admin   password: h3batl0h321 
+1 of 1 target successfully completed, 1 valid password found
+[WARNING] Writing restore file because 1 final worker threads did not complete until end.
+[ERROR] 1 target did not complete
+[ERROR] 16 tasks were completed, but 1 did not finish correctly
+[ERROR] 1 valid password found.
+[INFO] Writing restore file because 1 final worker threads did not complete until end.
+[22][protocol] host: 127.0.0.1   login: admin   password: h3batl0h321
+Session completed.
+
+                       __,,,,_
+   _   _ ___.--'''`--''// ,-o `-.
+   \`)' o |  \  \ o\/ /.// / ,-  o,_
+  /_`  \   |o )  | O|. /o// / -.,_o `-.
+ /<0\    ) \  |  | ||/ //o| \/ O  |`-.o`-._
+/  _.-.  .-\,O__|  _-| /o\ \/|_/  |    `-._)
+`-\  \/ |       /o__/ \__O / |o_/ |
+     `-'       |  -| -|\__ \  |-' |
+            __/ o /__,-o    ),'o |'
+           ((__.-'((____..-' \__,'
+
+ _______  ______  _______  _______  _    _
+|__   __||  ____||  _____||__   __|| |  | |
+   | |   | |__   | |__       | |   | |__| |
+   | |   |  __|  |  __|      | |   |  __  |
+   | |   | |____ | |____     | |   | |  | |
+   |_|   |______||______|    |_|   |_|  |_| by @github.pxcs
+
+
+host: 127.0.0.1   login: admin   password: h3batl0h321 (?)
+
+1 password hash cracked, 0 left
+```
+</details>
+
+```csharp
+                       __,,,,_
+   _   _ ___.--'''`--''// ,-o `-.
+   \`)' o |  \  \ o\/ /.// / ,-  o,_
+  /_`  \   |o )  | O|. /o// / -.,_o `-.
+ /<0\    ) \  |  | ||/ //o| \/ O  |`-.o`-._
+/  _.-.  .-\,O__|  _-| /o\ \/|_/  |    `-._)
+`-\  \/ |       /o__/ \__O / |o_/ |
+     `-'       |  -| -|\__ \  |-' |
+            __/ o /__,-o    ),'o |'
+           ((__.-'((____..-' \__,'
+
+ _______  ______  _______  _______  _    _
+|__   __||  ____||  _____||__   __|| |  | |
+   | |   | |__   | |__       | |   | |__| |
+   | |   |  __|  |  __|      | |   |  __  |
+   | |   | |____ | |____     | |   | |  | |
+   |_|   |______||______|    |_|   |_|  |_| by @github.pxcs
+
+password has been cracked.
+
 ```
 
 Thanks to all password recovery tool repo. See more in our ORG
