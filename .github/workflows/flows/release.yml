@@ -1,6 +1,6 @@
-name: smilodon
+name: Teeth
 
-on: interface.c
+on: config.json
   push:
     branches: [master, main]
     tags-ignore: ['**']
