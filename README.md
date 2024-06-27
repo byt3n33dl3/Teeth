@@ -214,7 +214,7 @@ kali@kali:~$ teeth -h
 
 ```
 kali@kali:~$
-kali@kali:~$ teeth --online --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha256 crack.txt
+kali@kali:~$ teeth --offline --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha256 crack.txt
 
 Teeth (https://github.com/pxcs/Teeth)
 Using default input encoding: UTF-8
@@ -252,7 +252,7 @@ results: h3batl0h321 (?)
 
 ```
 kali@kali:~$
-kali@kali:~$ teeth --offline -L username.txt -P wordlist.txt <ssh> <http> <https> <etc> 127.0.0.1
+kali@kali:~$ teeth --online -L username.txt -P wordlist.txt <ssh> <http> <https> <etc> 127.0.0.1
 
 Teeth (https://github.com/pxcs/Teeth)
 [DATA] max 16 tasks per 1 server, overall 16 tasks, 4 login tries (l:1/p:4)
@@ -315,4 +315,4 @@ password has been cracked.
 
 ```
 
-Thanks to all password recovery tool repo ( JtR, Hydra, Cewl ). See more in our ORG
+Thanks to all password recovery tool repo ( JtR, Hydra, Cewl, etc ). See more in our ORG
