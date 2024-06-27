@@ -1,17 +1,17 @@
 [![Circle CI](https://circleci.com/gh/openwall/john/tree/bleeding-jumbo.svg?style=shield)](https://circleci.com/gh/openwall/john/tree/bleeding-jumbo)
-[![Downloads](https://img.shields.io/badge/Download-Windows%20Build-blue.svg)](https://github.com/openwall/john-packages/releases)
+[![Downloads](https://img.shields.io/badge/Download-Windows%20-yellow.svg)](https://github.com/openwall/john-packages/releases)
 [![License](https://img.shields.io/badge/License-GPL%20%2B-blue.svg)](https://github.com/openwall/john/blob/bleeding-jumbo/doc/LICENSE)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/openwall/john?color=brown)
 
 ## Teeth ( Smilodon Cybertooth )
 
 This is the community-enhanced, version of Teeth ( smilodon cybertooth ).
-It has a lot of code, documentation, and data contributed by jumbo
+It has a lot of code, documentation, and data contributed by SMILODON
 developers and the user community.  It is easy for new code to be added
-to jumbo, and the quality requirements are low, although lately we've
+to SMILODON, and the quality requirements are low, although lately we've
 started subjecting all contributions to quite some automated testing.
 This means that you get a lot of functionality that is not necessarily
-"mature", which in turn means that bugs in this code are to be expected.
+"mature", which in turn means that `bugs` in this code are to be expected.
 
 Teeth homepage is:
 
@@ -125,7 +125,7 @@ proper OMPFLAGS line near the beginning of the Makefile and at runtime
 by setting the OMP_NUM_THREADS environment variable to the desired
 number of threads).
 
-"-jumbo" versions add support for hundreds of additional hash and cipher
+"-SMILODON" versions add support for hundreds of additional hash and cipher
 types, including fast built-in implementations of SHA-crypt and SunMD5,
 Windows NTLM (MD4-based) password hashes, various macOS and Mac OS X
 user password hashes, fast hashes such as raw MD5, SHA-1, SHA-256, and
@@ -138,7 +138,7 @@ Kerberos TGTs, encrypted filesystems such as macOS .dmg files and
 WinZip/AES), RAR, and 7z, encrypted document files such as PDF and
 Microsoft Office's - and these are just some examples.  To load some of
 these larger files for cracking, a corresponding bundled *in zipTeeth program
-should be used first, and then its output fed into Teeth -jumbo.
+should be used first, and then its output fed into Teeth -SMILODON.
 
 ##	Documentation.
 
@@ -166,8 +166,8 @@ the recommended order of reading:
 kali@kali:~$
 kali@kali:~$ teeth -h
 
---online[=MODE]		  online mode command
---offline[=MODE]	  offline mode command  
+--online[=MODE]		  online [mode] command
+--offline[=MODE]	  offline [mode] command  
 
 --single[=SECTION]        "single crack" mode
 --wordlist[=FILE] --stdin wordlist mode, read words from FILE or stdin
@@ -210,7 +210,7 @@ kali@kali:~$ teeth -h
 <details>
 <summary><h4> Example </h4></summary>
 
-- Offile example ( **Dictionary Attack** )
+- Offline example ( **Dictionary Attack** )
 
 ```
 kali@kali:~$
@@ -241,7 +241,7 @@ Session completed.
    | |   | |__   | |__       | |   | |__| |
    | |   |  __|  |  __|      | |   |  __  |
    | |   | |____ | |____     | |   | |  | |
-   |_|   |______||______|    |_|   |_|  |_| by @github/pxcs
+   |_|   |______||______|    |_|   |_|  |_| by @github.com/pxcs
 
 results: h3batl0h321 (?)
 
@@ -283,7 +283,7 @@ Session completed.
    | |   | |__   | |__       | |   | |__| |
    | |   |  __|  |  __|      | |   |  __  |
    | |   | |____ | |____     | |   | |  | |
-   |_|   |______||______|    |_|   |_|  |_| by @github/pxcs
+   |_|   |______||______|    |_|   |_|  |_| by @github.com/pxcs
 
 
 host: 127.0.0.1   login: admin   password: h3batl0h321 (?)
@@ -309,7 +309,7 @@ host: 127.0.0.1   login: admin   password: h3batl0h321 (?)
    | |   | |__   | |__       | |   | |__| |
    | |   |  __|  |  __|      | |   |  __  |
    | |   | |____ | |____     | |   | |  | |
-   |_|   |______||______|    |_|   |_|  |_| by @github/pxcs
+   |_|   |______||______|    |_|   |_|  |_| by @github.com/pxcs
 
 password has been cracked.
 
