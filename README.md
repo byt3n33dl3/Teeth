@@ -157,7 +157,7 @@ the recommended order of reading:
 * [CONTACT](doc/CONTACT) - how to contact the author or otherwise obtain support
 * [CREDITS](doc/CREDITS) - credits
 * [LICENSE](doc/LICENSE) - copyrights and licensing terms
-* [COPYING](doc/COPYING) - GNU GPL, as referenced by LICENSE above
+* [COPYING](doc/COPYING) - GPL, as referenced by LICENSE above
 
 
 ## Testing
@@ -165,6 +165,9 @@ the recommended order of reading:
 ```
 kali@kali:~$
 kali@kali:~$ teeth -h
+
+--online[=MODE]		  online mode command
+--offline[=MODE]	  offline mode command  
 
 --single[=SECTION]        "single crack" mode
 --wordlist[=FILE] --stdin wordlist mode, read words from FILE or stdin
@@ -211,7 +214,7 @@ kali@kali:~$ teeth -h
 
 ```
 kali@kali:~$
-kali@kali:~$ teeth --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha256 crack.txt
+kali@kali:~$ teeth --online --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha256 crack.txt
 
 Teeth (https://github.com/pxcs/Teeth)
 Using default input encoding: UTF-8
@@ -238,7 +241,7 @@ Session completed.
    | |   | |__   | |__       | |   | |__| |
    | |   |  __|  |  __|      | |   |  __  |
    | |   | |____ | |____     | |   | |  | |
-   |_|   |______||______|    |_|   |_|  |_| by @github.pxcs
+   |_|   |______||______|    |_|   |_|  |_| by @github/pxcs
 
 results: h3batl0h321 (?)
 
@@ -249,7 +252,7 @@ results: h3batl0h321 (?)
 
 ```
 kali@kali:~$
-kali@kali:~$ teeth -L username.txt -P wordlist.txt <ssh> <http> <https> <etc> 127.0.0.1
+kali@kali:~$ teeth --offline -L username.txt -P wordlist.txt <ssh> <http> <https> <etc> 127.0.0.1
 
 Teeth (https://github.com/pxcs/Teeth)
 [DATA] max 16 tasks per 1 server, overall 16 tasks, 4 login tries (l:1/p:4)
@@ -280,7 +283,7 @@ Session completed.
    | |   | |__   | |__       | |   | |__| |
    | |   |  __|  |  __|      | |   |  __  |
    | |   | |____ | |____     | |   | |  | |
-   |_|   |______||______|    |_|   |_|  |_| by @github.pxcs
+   |_|   |______||______|    |_|   |_|  |_| by @github/pxcs
 
 
 host: 127.0.0.1   login: admin   password: h3batl0h321 (?)
@@ -306,7 +309,7 @@ host: 127.0.0.1   login: admin   password: h3batl0h321 (?)
    | |   | |__   | |__       | |   | |__| |
    | |   |  __|  |  __|      | |   |  __  |
    | |   | |____ | |____     | |   | |  | |
-   |_|   |______||______|    |_|   |_|  |_| by @github.pxcs
+   |_|   |______||______|    |_|   |_|  |_| by @github/pxcs
 
 password has been cracked.
 
