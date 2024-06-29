@@ -3,5 +3,5 @@ pycryptodome
 scapy
 parsimonious
 asn1crypto
-dpkt
+dpkt==min
 pyhanko==0.20.1
