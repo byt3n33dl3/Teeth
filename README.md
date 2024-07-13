@@ -61,10 +61,10 @@ of word mangling rules:
 	Teeth --wordlist=password.lst --rules password
 
 Cracked passwords will be printed to the terminal and saved in the
-file called $TEETH/Teeth.pot (in the documentation and in the
+file called $Teeth/Teeth.pot (in the documentation and in the
 configuration file for Teeth, "$Teeth" refers to Teeth's "home
 directory"; which directory it really is depends on how you installed
-Teeth).  The $TEETH/Teeth.pot file is also used to not load password
+Teeth).  The $Teeth/Teeth.pot file is also used to not load password
 hashes that you already cracked when you run Teeth the next time.
 
 To retrieve the cracked passwords, run:
@@ -72,7 +72,7 @@ To retrieve the cracked passwords, run:
 	Teeth --show password
 
 While cracking, you can press any key for status, or 'q' or Ctrl-C to
-abort the session saving its state to a file ($TEETH/Teeth.rec by
+abort the session saving its state to a file ($Teeth/Teeth.rec by
 default). If you press Ctrl-C for a second time before Teeth had a
 chance to complete handling of your first Ctrl-C, Teeth will abort
 immediately without saving. By default, the state is also saved every
@@ -164,7 +164,7 @@ the recommended order of reading:
 
 ```
 kali@kali:~$
-kali@kali:~$ teeth -h
+kali@kali:~$ Teeth -h
 
 --online[=MODE]		  online [mode] command
 --offline[=MODE]	  offline [mode] command  
@@ -212,9 +212,9 @@ kali@kali:~$ teeth -h
 
 - Offline example ( **Dictionary Attack** )
 
-```
+```shell
 kali@kali:~$
-kali@kali:~$ teeth --offline --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha256 crack.txt
+kali@kali:~$ Teeth --offline --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha256 crack.txt
 
 Teeth (https://github.com/pxcs/Teeth)
 Using default input encoding: UTF-8
@@ -236,12 +236,12 @@ Session completed.
             __/ o /__,-o    ),'o |'
            ((__.-'((____..-' \__,'
 
- _______  ______  _______  _______  _    _
-|__   __||  ____||  _____||__   __|| |  | |
-   | |   | |__   | |__       | |   | |__| |
-   | |   |  __|  |  __|      | |   |  __  |
-   | |   | |____ | |____     | |   | |  | |
-   |_|   |______||______|    |_|   |_|  |_| by @github.com/pxcs
+___________            __  .__     
+\__    ___/___   _____/  |_|  |__  
+  |    |_/ __ \_/ __ \   __\  |  \ 
+  |    |\  ___/\  ___/|  | |   Y  \
+  |____| \___  >\___  >__| |___|  /
+             \/     \/          \/  by github.com/pxcs - openwall - magnumripper
 
 results: h3batl0h321 (?)
 
@@ -250,9 +250,9 @@ results: h3batl0h321 (?)
 
 - Online example ( **Dictionary Attack** )
 
-```
+```shell
 kali@kali:~$
-kali@kali:~$ teeth --online -L username.txt -P wordlist.txt <ssh> <http> <https> <etc> 127.0.0.1
+kali@kali:~$ Teeth --online -L username.txt -P wordlist.txt <ssh> <http> <https> <etc> 127.0.0.1
 
 Teeth (https://github.com/pxcs/Teeth)
 [DATA] max 16 tasks per 1 server, overall 16 tasks, 4 login tries (l:1/p:4)
@@ -278,12 +278,12 @@ Session completed.
             __/ o /__,-o    ),'o |'
            ((__.-'((____..-' \__,'
 
- _______  ______  _______  _______  _    _
-|__   __||  ____||  _____||__   __|| |  | |
-   | |   | |__   | |__       | |   | |__| |
-   | |   |  __|  |  __|      | |   |  __  |
-   | |   | |____ | |____     | |   | |  | |
-   |_|   |______||______|    |_|   |_|  |_| by @github.com/pxcs
+___________            __  .__     
+\__    ___/___   _____/  |_|  |__  
+  |    |_/ __ \_/ __ \   __\  |  \ 
+  |    |\  ___/\  ___/|  | |   Y  \
+  |____| \___  >\___  >__| |___|  /
+             \/     \/          \/  by github.com/pxcs - openwall - magnumripper
 
 
 host: 127.0.0.1   login: admin   password: h3batl0h321 (?)
@@ -304,15 +304,16 @@ host: 127.0.0.1   login: admin   password: h3batl0h321 (?)
             __/ o /__,-o    ),'o |'
            ((__.-'((____..-' \__,'
 
- _______  ______  _______  _______  _    _
-|__   __||  ____||  _____||__   __|| |  | |
-   | |   | |__   | |__       | |   | |__| |
-   | |   |  __|  |  __|      | |   |  __  |
-   | |   | |____ | |____     | |   | |  | |
-   |_|   |______||______|    |_|   |_|  |_| by @github.com/pxcs
+___________            __  .__     
+\__    ___/___   _____/  |_|  |__  
+  |    |_/ __ \_/ __ \   __\  |  \ 
+  |    |\  ___/\  ___/|  | |   Y  \
+  |____| \___  >\___  >__| |___|  /
+             \/     \/          \/ v2
 
 password has been cracked.
 
 ```
 
-Thanks to all password recovery tool repo ( JtR, Hydra, Cewl, etc ). See more in our ORG
+## Thanks to:
+password recovery tool repo ( JtR, Hydra, Cewl, etc ). See more in our ORG
