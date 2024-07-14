@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-GPL%20%2B-blue.svg)](https://github.com/openwall/john/blob/bleeding-jumbo/doc/LICENSE)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/openwall/john?color=brown)
 
-## Teeth ( Smilodon Cybertooth )
+# Teeth
 
 This is the community-enhanced, version of Teeth ( smilodon cybertooth ).
 It has a lot of code, documentation, and data contributed by SMILODON
@@ -208,7 +208,7 @@ kali@kali:~$ Teeth -h
 <hr>
 
 <details>
-<summary><h4> Example </h4></summary>
+<summary><h2> Example </h2></summary>
 
 - Offline example ( **Dictionary Attack** )
 
@@ -293,16 +293,6 @@ host: 127.0.0.1   login: admin   password: h3batl0h321 (?)
 </details>
 
 ```csharp
-                       __,,,,_
-   _   _ ___.--'''`--''// ,-o `-.
-   \`)' o |  \  \ o\/ /.// / ,-  o,_
-  /_`  \   |o )  | O|. /o// / -.,_o `-.
- /<0\    ) \  |  | ||/ //o| \/ O  |`-.o`-._
-/  _.-.  .-\,O__|  _-| /o\ \/|_/  |    `-._)
-`-\  \/ |       /o__/ \__O / |o_/ |
-     `-'       |  -| -|\__ \  |-' |
-            __/ o /__,-o    ),'o |'
-           ((__.-'((____..-' \__,'
 
 ___________            __  .__     
 \__    ___/___   _____/  |_|  |__  
@@ -311,9 +301,13 @@ ___________            __  .__
   |____| \___  >\___  >__| |___|  /
              \/     \/          \/ v2
 
-password has been cracked.
+    password has been cracked.
 
 ```
 
 ## Thanks to:
-password recovery tool repo ( JtR, Hydra, Cewl, etc ). See more in our ORG
+Password recovery tool 
+- JtR
+- Hydra
+- Cewl
+- And more ( See more in our ORG )
