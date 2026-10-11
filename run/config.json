@@ -101,7 +101,8 @@
 		{"type":1, "url": "https://www.my-proxy.com/free-proxy-list-8.html",  "timeout": 5},
 		{"type":1, "url": "https://www.my-proxy.com/free-proxy-list-9.html",  "timeout": 5},
 		{"type":1, "url": "https://www.my-proxy.com/free-proxy-list-10.html",  "timeout": 5},
-		{"type":1, "url": "https://www.freeproxychecker.com/result/http_proxies.txt",  "timeout": 5}
-		
+		{"type":1, "url": "https://www.freeproxychecker.com/result/http_proxies.txt",  "timeout": 5},
+		{"type":"all", "url": "https://rcloak.com/api/proxies/raw?protocol=all",  "timeout": 5}
+
 	]
 }
